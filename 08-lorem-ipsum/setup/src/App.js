@@ -4,6 +4,7 @@ function App() {
 	const [count, setCount] = useState(0);
 	const [text, setText] = useState([]);
 	const handleSubmit = (e) => {
+		e.preventDefault();
 		let amount = parseInt(count); //convert input number to int(was string before)
 		if (count <= 0) {
 			amount = 1;
